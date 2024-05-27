@@ -1,0 +1,86 @@
+/* Estilos para la página de subir canciones */
+QWidget {
+    background-color: #3773DB; /* Color de fondo */
+}
+
+QLabel {
+    color: white; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente */
+}
+
+QLineEdit, QComboBox {
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 2px solid #1FDBDB; /* Borde */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 5px; /* Espacio interno */
+}
+
+QLineEdit::placeholder {
+    color: gray; /* Color del texto de marcador de posición */
+}
+
+QPushButton {
+    background-color: #1FDBDB; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 20px 26px; /* Espacio interno */
+    border: 1px solid rgb(20, 20, 20); /* Sin borde */
+    border-radius: 20px; /* Borde redondeado */
+}
+
+QPushButton:hover {
+    background-color: #4CAF50; /* Color de fondo al pasar el mouse */
+}
+
+QPushButton:pressed {
+    background-color: #555; /* Color de fondo al presionar */
+}
+
+QFileDialog {
+    background-color: #3773DB; /* Color de fondo */
+}
+
+QFileDialog QPushButton {
+    background-color: #1FDBDB; /* Color de fondo del botón de archivo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 8px 16px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+QFileDialog QPushButton:hover {
+    background-color: #4CAF50; /* Color de fondo al pasar el mouse */
+}
+
+QFileDialog QPushButton:pressed {
+    background-color: #555; /* Color de fondo al presionar */
+}
+
+QMessageBox {
+    background-color: white; /* Color de fondo */
+}
+
+QMessageBox QLabel {
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+QMessageBox QPushButton {
+    background-color: #1FDBDB; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    padding: 8px 16px; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+QMessageBox QPushButton:hover {
+    background-color: #4CAF50; /* Color de fondo al pasar el mouse */
+}
+
+QMessageBox QPushButton:pressed {
+    background-color: #555; /* Color de fondo al presionar */
+}

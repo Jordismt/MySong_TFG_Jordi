@@ -1,0 +1,83 @@
+/* Estilos para el formulario de inicio de sesión */
+#loginForm {
+    background-color: #3773DB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#loginForm QLabel {
+    font-size: 18px;
+}
+
+#loginForm QLineEdit, #loginForm QPushButton {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #1FDBDB;
+    border-radius: 5px;
+}
+
+#loginForm QPushButton {
+    background-color: #1FDBDB;
+    color: #f3f3f3;
+}
+
+#loginForm QPushButton:hover {
+    background-color: #7dbdbd;
+    color:black;
+}
+
+/* Estilos para el formulario de registro */
+#registerForm {
+    background-color: #1FDBDB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#registerForm QLabel {
+    font-size: 18px;
+}
+
+#registerForm QLineEdit, #registerForm QPushButton {
+    font-size: 16px;
+    padding: 8px;
+    border: 2px solid #1FDBDB;
+    border-radius: 5px;
+}
+
+#registerForm QPushButton {
+    background-color: #1FDBDB;
+    color: white;
+}
+
+#registerForm QPushButton:hover {
+    background-color: #7dbdbd;
+    color:black;
+}
+
+/* Estilos para el botón de comprobar nombre */
+#checkUsernameButton {
+    font-size: 14px;
+    padding: 8px;
+    background-color: #3773DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#checkUsernameButton:hover {
+    background-color: #1F55B3;
+}
+
+/* Estilos para el botón de instrucciones */
+#instructionsButton {
+    font-size: 14px;
+    padding: 8px;
+    background-color: #3773DB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#instructionsButton:hover {
+    background-color: #1F55B3;
+}

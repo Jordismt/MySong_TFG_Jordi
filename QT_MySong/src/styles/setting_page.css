@@ -1,0 +1,33 @@
+/* Estilos para la ventana de ajustes */
+#settingsWindow {
+    background-color: #3773DB;
+    font-size: 34px;
+}
+/* Estilos para el campo de texto de nombre */
+#nameLineEdit {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #FFFFFF; /* Cambiar color de fondo si es necesario */
+    color: black; /* Cambiar color del texto si es necesario */
+    border: 1px solid #CCCCCC; /* Cambiar el estilo del borde si es necesario */
+    border-radius: 5px;
+}
+
+/* Estilos para el nombre del usuario */
+#nameLabel {
+    font-size: 20px;
+    color: white;
+}
+/* Estilos para los botones */
+#changeNameButton, #makePublicCheckbox, #logoutButton, #deleteAccountButton {
+    font-size: 16px;
+    padding: 10px;
+    background-color: #1FDBDB;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#changeNameButton:hover, #makePublicCheckbox:hover, #logoutButton:hover, #deleteAccountButton:hover {
+    background-color: #0FA8A8;
+}

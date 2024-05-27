@@ -1,0 +1,56 @@
+/* Estilos para la página de búsqueda de canciones */
+QWidget {
+    background-color: #3773DB; /* Color de fondo */
+}
+
+QLabel {
+    color: white;
+    font-size: 18px;
+}
+
+QLineEdit {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    border: 2px solid #1FDBDB;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QPushButton {
+    background-color: #1FDBDB; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 12px; /* Tamaño de fuente */
+    padding: 8px ; /* Espacio interno */
+    border: none; /* Sin borde */
+    border-radius: 10px; /* Borde redondeado */
+    margin-right: 10px; /* Aumenta el margen derecho del botón */
+}
+
+QPushButton:hover {
+    background-color: #3773DB; /* Color de fondo al pasar el mouse */
+}
+
+QListWidget {
+    background-color: white; /* Color de fondo */
+    color: black; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 2px solid #1FDBDB; /* Borde */
+    border-radius: 10px; /* Borde redondeado */
+    padding: 10px; /* Espacio interno */
+}
+
+QListWidget::item {
+    height: 40px; /* Altura del elemento de la lista */
+}
+
+QListWidget::item QPushButton {
+    margin-left: 10px; /* Margen izquierdo del botón */
+    float: right; /* Alinea el botón a la derecha */
+    margin-right: 10px; /* Aumenta el margen derecho del botón */
+}
+
+QListWidget::item:selected {
+    background-color: #3773DB; /* Color de fondo del elemento seleccionado */
+    color: white; /* Color del texto del elemento seleccionado */
+}
