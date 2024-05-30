@@ -92,9 +92,6 @@ class ListasPage(QWidget):
         nombre_label.setStyleSheet("font-size: 18px; font-weight: bold; color: white;")
         layout.addWidget(nombre_label)
 
-        reproducir_button = QPushButton("Reproducir")
-        reproducir_button.setStyleSheet("background-color:#1FDBDB; color:#FFFFFF; padding: 5px 10px; font-size: 14px;")
-        layout.addWidget(reproducir_button)
 
         return widget
 

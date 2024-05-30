@@ -14,7 +14,7 @@ from controller.Reproducir_cancion import ReproductorCanciones
 class Inici(QMainWindow):
     def __init__(self):
         super().__init__()
-      
+
         self.menu=Menu()
         self.login=LoginRegister()
         # Configurar el widget principal
@@ -24,7 +24,7 @@ class Inici(QMainWindow):
         # Crear el widget principal y el layout
         self.central_widget = QWidget()
         self.setCentralWidget(self.central_widget)
-        self.layout = QVBoxLayout(self.central_widget)  # Usamos un layout vertical
+        self.layout = QVBoxLayout(self.central_widget)  
 
         # Crear los widgets para las secciones
         self.top_section = QWidget()
@@ -42,11 +42,11 @@ class Inici(QMainWindow):
         my_song_label = QLabel("MySong")
         my_song_label_slogan = QLabel("¡Música y más!")
 
-        my_song_label.setStyleSheet("font-size: 70px; color: black;") #Estilos para el título
+        my_song_label.setStyleSheet("font-size: 70px; color: black;") 
         my_song_label.setAlignment(Qt.AlignCenter) # Estilo para centrarlo
 
         my_song_label_slogan.setAlignment(Qt.AlignCenter) # Estilo para centrarlo
-        my_song_label_slogan.setStyleSheet("font-size: 30px; color: black;") #Estilos para el slogan
+        my_song_label_slogan.setStyleSheet("font-size: 30px; color: black;") 
 
         layout_top = QVBoxLayout(self.top_section) #Creamos layout vertical para los textos
         
@@ -85,6 +85,12 @@ class Inici(QMainWindow):
         #Añadir los botones al layout y centrarlos
         layout_bottom.addWidget(button_login, alignment=Qt.AlignCenter)
         layout_bottom.addWidget(button_invitado, alignment=Qt.AlignCenter)
+
+        aviso_reiniciar=QLabel("IMPORTANTE - Al cambiar el nombre, o crear nueva lista, reinicia la aplicación.")
+        aviso_bug=QLabel("IMPORTANTE - Si intentas subir una cancion y has completado todos los campos, puede que te salga error, posiblemente la cancion si que se haya subido, compruebalo buscandola por el nombre.")
+        layout_bottom.addWidget(aviso_reiniciar, alignment=Qt.AlignCenter)
+        layout_bottom.addWidget(aviso_bug, alignment=Qt.AlignCenter)
+
 
         # Función para mostrar el aviso al hacer clic en el botón de invitado
         def mostrar_aviso():

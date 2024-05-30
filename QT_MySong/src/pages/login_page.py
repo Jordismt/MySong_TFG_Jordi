@@ -64,13 +64,14 @@ class LoginForm(QWidget):
 
         if success:
             QMessageBox.information(self, "Inicio de sesión", message)
-   
+            window=LoginRegister()
+            window.close()
             self.main_window = Menu(username)
-            self.principal=LoginRegister()
+            #self.principal=LoginRegister()
             
             # Abrir la ventana principal (la de menú)
             self.main_window.show()
-            self.principal.close()
+            
         else:
             QMessageBox.warning(self, "Inicio de sesión", message)
 

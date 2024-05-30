@@ -73,12 +73,12 @@ class SubirCancionPage(QWidget):
         layout.addWidget(self.file_label)
 
     def cargar_listas_usuario(self):
+        self.lista_dropdown.clear()
         listas = ListaReproduccionService.obtener_listas_usuario(self.usuario)
         if listas:
             for lista in listas:
                 self.lista_dropdown.addItem(lista['nombre'], lista['id'])
-        else:
-            QMessageBox.warning(self, "Error", "No se pudieron cargar las listas de reproducción.")
+
 
     def seleccionar_archivo(self):
         # Abre un cuadro de diálogo para seleccionar un archivo
@@ -125,9 +125,9 @@ class SubirCancionPage(QWidget):
             if response.status_code == 201:
                 QMessageBox.information(self, "Éxito", "Canción subida exitosamente")
             else:
-                QMessageBox.warning(self, "Error", f"Error al subir la canción: {response.text}")
+                QMessageBox.warning(self, "Error", f"Error al subir la canción ")
         except Exception as e:
-            QMessageBox.critical(self, "Error", f"Excepción al subir la canción: {str(e)}")
+            QMessageBox.critical(self, "Error", f"Excepción al subir la canción")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

@@ -8,7 +8,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from PySide6.QtWidgets import *
 from PySide6.QtGui import *
 from PySide6.QtCore import *
-from controller.Reproducir_cancion import ReproductorCanciones
+
 
 class SongListItem(QWidget):
     play_clicked = Signal(int)
@@ -31,12 +31,12 @@ class SongListItem(QWidget):
         self.play_clicked.emit(self.song_data['id'])
 
 class SearchSong(QWidget):
-    def __init__(self):
+    def __init__(self,reproductor):
         super().__init__()
         self.setWindowTitle("MySong - Buscar Canciones")
         self.setStyleSheet(open("src/styles/buscar_song.css").read())
 
-        self.reproductor = ReproductorCanciones()
+        self.reproductor = reproductor
         self.layout = QVBoxLayout(self)
 
         self.search_label = QLabel("Buscar Canciones por Nombre:")
