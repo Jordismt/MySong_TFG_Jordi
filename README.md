@@ -26,7 +26,7 @@ Repositorio del Trabajo de fin de grado de DAM, hecho por Jordi Casanova Solanes
   -Cliente: Para el apartado frontend, he utilizado el lenjuage de programación Python con la libreria PySide6 para la UI, 
   también utilize funciones y herramientas de PySide6 como QMultimedia para el apartado de la reproducción de canciones. (Como editor de codigo utilize VSCode)
 
-  -Servidor: Para el apartado de Backend, utilizé el lenjuage de programación Java con su framework SpringBoot. El servidor consta en realizar una API, donde luego el cliente hara sus peticiones HTTP
+  -Servidor: Para el apartado de Backend, utilizé el lenjuage de programación Java con su framework SpringBoot y como ORM utilizé Hibernate. El servidor consta en realizar una API, donde luego el cliente hara sus peticiones HTTP
   correspondientes, luego se guarda en la BD que en mi caso utilizé PostgreSQl, aunque no es lo mas apropiado para este tipo de proyectos, una forma mas escalable seria utilizar almacenamiento en la nube
   como Amazon S3 ... (Como editor de codigo utilize el IDE de SpringToolSuite4)
 
